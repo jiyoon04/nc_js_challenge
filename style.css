@@ -1,0 +1,146 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  text-shadow: 0px 0px 30px gray;
+  color: #fff;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -5;
+  filter: brightness(60%);
+}
+
+#weather {
+  text-align: right;
+}
+
+#clock {
+  height: 200px;
+  font-size: 6rem;
+}
+
+#login-form input {
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+}
+
+#login-form input:focus {
+  outline: none;
+  background-color: white;
+  opacity: 60%;
+}
+
+#login-form input:disabled {
+  background-color: #f0f0f0;
+  color: #999;
+}
+
+#login-form {
+  margin: 0 auto;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  width: 300px;
+  margin-top: 100px;
+  box-sizing: border-box;
+}
+
+#login-form input {
+  width: 100%;
+  margin-right: 10px;
+}
+
+#login-form button {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+
+  cursor: pointer;
+}
+
+#greeting {
+  margin-top: 100px;
+  transition: all, 0.5s;
+}
+
+#todo-form input {
+  text-align: center;
+  font-size: 1rem;
+  width: 500px;
+  height: 40px;
+  font-weight: 500;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: -50px;
+  transition: all, 0.5s;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+}
+
+#todo-form input:focus {
+  outline: none;
+  background-color: white;
+  opacity: 60%;
+}
+
+#todo-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.todospan {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: none;
+  /* box-shadow: 0 0 5px white; */
+  border-radius: 10px;
+  opacity: 80%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin: 50px;
+  margin-right: 5px;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.todospan:hover {
+  background-color: white;
+  opacity: 50%;
+  color: black;
+  transition: all, 0.5s;
+}
+
+.todobutton {
+  cursor: pointer;
+  padding: 0px;
+}
+
+.date {
+  margin-top: -100px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+}
